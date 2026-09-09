@@ -1,4 +1,3 @@
-# klikkode-nauka-kodowania
 # KlikKod
 
 KlikKod to prosta, przyjazna aplikacja do nauki programowania dla osób początkujących.
