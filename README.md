@@ -63,5 +63,6 @@ Przy pytaniach wybierz bieżący folder projektu i zaakceptuj ustawienia domyśl
 
 - `index.html` — główny ekran aplikacji,
 - `style.css` — wygląd i responsywność,
-- `script.js` — quiz i interakcje,
+- `app-core.js` — rdzeń interfejsu, lekcje i interakcje,
+- `course-content.js` — rozszerzenia kursu, walidacja i funkcje dydaktyczne,
 - `vercel.json` — konfiguracja routingu Vercel.
