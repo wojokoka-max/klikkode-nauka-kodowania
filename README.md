@@ -5,7 +5,7 @@ KlikKod to prosta, przyjazna aplikacja do nauki programowania dla osób początk
 ## Zawartość
 
 - pulpit z misją na dziś,
-- 14 praktycznych lekcji HTML, CSS i JavaScript,
+- 17 praktycznych lekcji HTML, CSS i JavaScript,
 - trzy osobne zakładki edytora: HTML (treść), CSS (wygląd) i JavaScript (reakcje),
 - przycisk „Uruchom kod” z bezpiecznym podglądem wyniku,
 - sprawdzanie podstawowych błędów składni z prostym wyjaśnieniem,
@@ -13,6 +13,7 @@ KlikKod to prosta, przyjazna aplikacja do nauki programowania dla osób początk
 - zadania sprawdzane automatycznie,
 - mini-quiz na pulpicie z informacją zwrotną i jednorazowymi punktami,
 - Pracownię projektów z wizytówką, kartą interaktywną i ćwiczeniem responsywności,
+- rozdział końcowy z tablicami, pętlami i własnym projektem,
 - checklisty projektowe aktualizowane podczas pisania kodu,
 - odznaki przyznawane na podstawie faktycznie ukończonych kroków,
 - trwały zapis ukończonych lekcji w pamięci przeglądarki,
