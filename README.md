@@ -11,8 +11,12 @@ KlikKod to prosta, przyjazna aplikacja do nauki programowania dla osób początk
 - sprawdzanie podstawowych błędów składni z prostym wyjaśnieniem,
 - podpowiedź dopasowana do zadania, dostępna dopiero po kliknięciu,
 - zadania sprawdzane automatycznie,
+- mini-quiz na pulpicie z informacją zwrotną i jednorazowymi punktami,
+- Pracownię projektów z wizytówką, kartą interaktywną i ćwiczeniem responsywności,
+- checklisty projektowe aktualizowane podczas pisania kodu,
 - odznaki przyznawane na podstawie faktycznie ukończonych kroków,
 - trwały zapis ukończonych lekcji w pamięci przeglądarki,
+- automatyczny zapis wersji roboczych kodu oraz przywracanie podglądu,
 - responsywny wygląd na komputerze i telefonie.
 
 ## Jak pracować z lekcją
@@ -22,6 +26,8 @@ KlikKod to prosta, przyjazna aplikacja do nauki programowania dla osób początk
 3. Zmień mały fragment kodu i kliknij **Uruchom kod**, aby zobaczyć efekt.
 4. **Sprawdź kod** szuka podstawowych pomyłek, a **Sprawdź zadanie** najpierw pilnuje składni, a potem zalicza polecenie.
 5. Jeśli eksperyment pójdzie w złą stronę, kliknij **Przywróć przykład** i zacznij jeszcze raz.
+6. W projektach obserwuj checklistę — projekt zostanie zaliczony dopiero po spełnieniu wszystkich wymagań.
+7. Kod zapisuje się jako wersja robocza. Przycisk **Przywróć przykład** usuwa również zapisany szkic tej lekcji.
 
 ## Uruchomienie lokalne
 
