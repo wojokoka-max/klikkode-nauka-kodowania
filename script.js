@@ -35,4 +35,5 @@ chapters.push(['04','Dane i decyzje','Zacznij programować zachowanie: dane, war
 
 
 const nextLessonObserver=new MutationObserver(()=>{const box=document.querySelector('.learn-box');if(box&&box.querySelector('.learn-editor')&&!box.querySelector('.next-lesson')){const next=document.createElement('button');next.className='next-lesson';next.textContent='Następna lekcja →';next.style.cssText='display:none;margin-top:12px;border:0;border-radius:8px;padding:12px 16px;background:#6754d9;color:#fff;font-weight:800;cursor:pointer';box.querySelector('.learn-result').after(next);next.onclick=()=>{const index=lessons.findIndex(x=>x[0]===box.querySelector('h2').textContent);box.closest('.learn-modal').remove();if(index>=0&&index<lessons.length-1)openLesson(index+1)}}});nextLessonObserver.observe(document.body,{childList:true,subtree:true});setInterval(()=>{const box=document.querySelector('.learn-box');const result=box?.querySelector('.learn-result');const next=box?.querySelector('.next-lesson');if(result?.classList.contains('good')&&next)next.style.display='inline-block'},300);
+setTimeout(refreshProgress,0);
 
