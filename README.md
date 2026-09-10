@@ -17,6 +17,7 @@ KlikKod to prosta, przyjazna aplikacja do nauki programowania dla osób początk
 - checklisty projektowe aktualizowane podczas pisania kodu,
 - odznaki przyznawane na podstawie faktycznie ukończonych kroków,
 - trwały zapis ukończonych lekcji w pamięci przeglądarki,
+- opcjonalna historia ukończonych lekcji w bazie Neon (gdy Vercel ma `DATABASE_URL`),
 - automatyczny zapis wersji roboczych kodu oraz przywracanie podglądu,
 - responsywny wygląd na komputerze i telefonie.
 
@@ -30,9 +31,19 @@ KlikKod to prosta, przyjazna aplikacja do nauki programowania dla osób początk
 6. W projektach obserwuj checklistę — projekt zostanie zaliczony dopiero po spełnieniu wszystkich wymagań.
 7. Kod zapisuje się jako wersja robocza. Przycisk **Przywróć przykład** usuwa również zapisany szkic tej lekcji.
 
+## Historia w Neon
+
+Historia nie wymaga jeszcze konta. Aplikacja używa anonimowego identyfikatora urządzenia i zapisuje ukończone lekcje wraz z datą. Bez skonfigurowanego Neona aplikacja bezpiecznie korzysta z zapisu lokalnego.
+
+1. Utwórz bazę Neon i skopiuj jej connection string.
+2. W projekcie Vercel dodaj zmienną środowiskową `DATABASE_URL` dla środowiska **Production** (oraz **Preview**, jeśli chcesz testować wdrożenia testowe).
+3. Wdróż projekt ponownie. Tabela `klikkod_history` utworzy się automatycznie przy pierwszym zapisie.
+
+Connection stringu nie wpisuj do plików ani do kodu. Przykładowa nazwa zmiennej znajduje się w `.env.example`.
+
 ## Uruchomienie lokalne
 
-Nie są potrzebne żadne zależności ani instalacja Node.js.
+Sam ekran aplikacji działa jako statyczny frontend. Endpoint historii korzysta z zależności Neon instalowanych przez Vercel.
 
 1. Otwórz plik `index.html` w przeglądarce.
 2. Możesz korzystać z quizu i interakcji od razu.
@@ -65,4 +76,7 @@ Przy pytaniach wybierz bieżący folder projektu i zaakceptuj ustawienia domyśl
 - `style.css` — wygląd i responsywność,
 - `app-core.js` — rdzeń interfejsu, lekcje i interakcje,
 - `course-content.js` — rozszerzenia kursu, walidacja i funkcje dydaktyczne,
+- `api/history.js` — bezpieczny endpoint zapisu i odczytu historii,
+- `package.json` / `package-lock.json` — zależność sterownika Neon,
+- `.env.example` — nazwa wymaganej zmiennej środowiskowej bez sekretu,
 - `vercel.json` — konfiguracja routingu Vercel.

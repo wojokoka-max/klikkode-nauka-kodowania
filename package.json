@@ -1,0 +1,9 @@
+{
+  "name": "klikkod",
+  "private": true,
+  "version": "1.0.0",
+  "description": "KlikKod — przyjazna aplikacja do nauki kodowania",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2"
+  }
+}
