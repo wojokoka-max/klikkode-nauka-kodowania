@@ -13,4 +13,5 @@ const finalLesson=lessons.find(item=>item[0]==='Projekt końcowy');if(finalLesso
 const courseCount=lessons.length;const progressCaption=document.querySelector('.progress-card p');if(progressCaption)progressCaption.textContent=`Ukończono 0 z ${courseCount} lekcji`;
 const nextButtonGateObserver=new MutationObserver(()=>{document.querySelectorAll('.learn-box').forEach(box=>{const next=box.querySelector('.next-lesson'),result=box.querySelector('.learn-result');if(next&&result)next.style.display=result.textContent.includes('Lekcja zaliczona')?'inline-block':'none'})});nextButtonGateObserver.observe(document.body,{childList:true,subtree:true,characterData:true});
 const chapterModalGuardObserver=new MutationObserver(()=>{const modals=[...document.querySelectorAll('.chapters-box')];modals.slice(1).forEach(modal=>modal.closest('.learn-modal')?.remove())});chapterModalGuardObserver.observe(document.body,{childList:true,subtree:true});
+document.querySelector('#chaptersNav')?.addEventListener('click',()=>{setTimeout(()=>{const modals=[...document.querySelectorAll('.chapters-box')];modals.slice(1).forEach(modal=>modal.closest('.learn-modal')?.remove())},0)});
 })();
